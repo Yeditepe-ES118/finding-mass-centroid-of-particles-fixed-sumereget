@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def centroid(p1x, p1y, p2x, p2y, p3x, p3y, m1, m2, m3):
     positions = np.array([[p1x, p2x, p3x],
-                          [p2y, p2y, p3y]]) #2D
+                          [p1y, p2y, p3y]]) #2D
     
     masses = np.array([m1, m2, m3]) #1D
     
