@@ -14,6 +14,6 @@ def centroid(p1x, p1y, p2x, p2y, p3x, p3y, m1, m2, m3):
     cx = np.sum(positions[0,:] * masses) / tot_mass   # 1.rowu çekiyor [0,:]
     cy = np.sum(positions[1,:] * masses) / tot_mass   # 2.rowu çekiyor [1,:]
     
-    return cx, cy, tot_mass
+    return tot_mass, cx, cy
 
 test = centroid(1,1,0,1,1,0,3,4,100)
